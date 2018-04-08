@@ -22,6 +22,6 @@ What I did last night whean I should have already been sleeping | Read about bui
 * Based on one lecture on the *Aivoaakkoset* course a couple of years ago, I think Enrico is a great lecturer. I'm looking forward to learning more from him.
 
 ## A somewhat relevant *XKCD*
-![I just spent 20 minutes deciding whether to start an email with 'Hi' or 'Hey', so I think it transferred correctly.](https://imgs.xkcd.com/comics/brain_upload.png)
+![I just spent 20 minutes deciding whether to start an email with 'Hi' or 'Hey', so I think it transferred correctly.](https://imgs.xkcd.com/comics/brain_upload.png "I just spent 20 minutes deciding whether to start an email with 'Hi' or 'Hey', so I think it transferred correctly.")
 
 ([Source](https://xkcd.com/1666/))
