@@ -80,7 +80,8 @@ fig = plt.figure()
 fig.add_subplot(121)
 for i in range(len(x)):
     plt.scatter(x[i], y[i])
-    plt.show()
+plt.xlabel("Percentage used as seed")
+plt.ylabel("Adjusted Rand score")
 fig.add_subplot(122)
 median = []
 upper = []
@@ -94,13 +95,16 @@ for z in x_range:
 plt.plot(x_range, median, 'k')
 plt.plot(x_range, upper, 'k--')
 plt.plot(x_range, lower, 'k--')
+plt.xlabel("Percentage used as seed")
+plt.ylabel("Adjusted Rand score")
+plt.show()
 
 # A sample network:
 i = np.random.choice(range(len(nets)))
 net = nets[i]
 
 # Fit once more for the fig
-seed_percentage = 10
+seed_percentage = 20
 n_nodes = len(infomap_clusters[i])
 labels = -np.ones(n_nodes)
 # Here I choose some "seed" nodes. Currently they are just random but 
@@ -122,9 +126,11 @@ colors = cm.rainbow(np.linspace(0, 1, n_clusters))
 node_color = [colors[c-1] for c in infomap_clusters[i]]
 fig = plt.figure()
 ax = fig.add_subplot(121)
+ax.set_axis_off()
 nx.draw_networkx_nodes(net, ax=ax, pos=pos, node_size=100, node_color=node_color)
 nx.draw_networkx_edges(net, width=weights, ax=ax, pos=pos)
 ax = fig.add_subplot(122)
+ax.set_axis_off()
 node_color = [colors[int(c)-1] for c in lp_clusters]
 nx.draw_networkx_nodes(net, ax=ax, pos=pos, node_size=100, node_color=node_color)
 nx.draw_networkx_edges(net, width=weights, ax=ax, pos=pos)
